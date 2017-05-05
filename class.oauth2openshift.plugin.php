@@ -26,16 +26,12 @@ $PluginInfo['oauth2-openshift'] = array(
  */
 
 class OAuth2OpenShiftPlugin extends Gdn_OAuth2 {
-    /**
-     * @var string Sets the settings view in the dashboard.
-     */
-    protected $settingsView = 'settings/oauth2-openshift';
-
 
     /**
      * Set the key for saving OAuth settings in GDN_UserAuthenticationProvider
      */
     public function __construct() {
         $this->setProviderKey('oauth2-openshift');
+        $this->settingsView = 'plugins/settings/oauth2-openshift';
     }
 }
