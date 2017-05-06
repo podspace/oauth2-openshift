@@ -40,7 +40,7 @@ cd /var/www/vanilla/plugins && git clone https://github.com/podspace/oauth2-open
 | ----------------- | --------------------------------------------------------------------------- |
 | Client ID         | vanilla (actually the metadata.name of the OpenShift OAuthClient definition |
 | Secret            | The same secret you have set in OpenShift                                   |
-| Authorize URL     | https://\<openshift master\>                                                  |
+| Authorize URL     | https://\<openshift master\>/oauth/authorize                                  |
 | Token URL         | https://\<openshift master\>/oauth/token                                      |
 | Profile URL       | https://\<openshift master\>/oapi/v1/users/~                                  |
 | Register URL      |                                                                             |
